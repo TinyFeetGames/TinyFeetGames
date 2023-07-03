@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"  content="width=witdh-device, 
+    user scalable=no,initial-scale=1.0, maximum-scale=1.0,minimum scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+    
+<body>
+<header class="header" role="banner" id="header">
+    <span class="general-nav-bar">
+        <div class="logo-nav-bar">
+            <!--Logo here-->
+            <a class="logoBox" href="index.html">
+                <img class="UprisingHumanumLogo" src="images/UprisingLogo.png" alt="Uprising Humanum Logo">
+            </a>
+        </div>
+        <div class="nav-bar">
+            <!--menu button-->
+            <button class="iconBtn" id="menuBtn">
+                <!--hamburger menu--->
+                <img class="menu-icon" src="images/icons/list.svg" alt="menu icon">
+            </button>
+        </div>
+    </span>
+    <!-- Menu-->
+    <nav class="main-nav" id="menu">
+        <!--Menu content-->
+        <ul class="menu" >
+            <li class="item-menu hover"><a href="" class="link-menu">Contact</a></li>
+            <li class="item-menu hover"><a href="" class="link-menu">Download</a></li>
+            <li class="item-menu hover"><a href="https://store.steampowered.com/app/2388250/Uprising_Humanum/" class="link-menu">Steam</a></li>
+            <!--Menu content end-->
+        </ul>
+    </nav>
+    <!--Menu end-->
+</header>
+
+<div class="section content">
+    <div class="slide">
+        <div class="contact-container">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h1>CONTACT</h1>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Email id" required>
+                <input type="text" id="phone" placeholder="Phone no." required>
+                <textarea id="message" rows="4" placeholder="What do you whant to know?"></textarea>
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+    </div> 
+</div>
+
+<!--Footer-->
+<footer class="footer">
+    <div class="footer-group-1">
+        <div class="footer-box">
+            <ul class="footer-list">
+                <li class="item-footer-list"> 
+                    <a class="logoBox" href="index.html">
+                        <img class="UprisingHumanumLogo" src="images/UprisingLogo.png" alt="Uprising Humanum Logo">
+                    </a>
+                </li>
+            </ul>
+           
+        </div>
+        <div class="footer-box">
+            <ul class="footer-list">
+                <li class="item-footer-list"><a href="#section-about" target="" class="link-menu">About</a></li>
+                <li class="item-footer-list"><a href="https://store.steampowered.com/app/2388250/Uprising_Humanum/" target="" class="link-menu">Steam</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-group-2">
+        <small>&copy; 2023 <b>Uprising Humanum</b> - All Rigths Reserved.</small>
+    </div>
+</footer>
+<!--Footer end-->
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "graobattles@gmail.com",
+            Password : "8F8D9BC6966CA51CBFFCE4BD89A17147C9A5",
+            Port: 2525,
+            To : 'graobattles@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "New Contact",
+            Body : "Name: " + document.getElementById("name").value 
+                +
+                "<br> Email: " + document.getElementById("email").value
+                +
+                "<br> Phone no.: " + document.getElementById("phone").value
+                +
+                "<br> Message: " + document.getElementById("message").value
+        }).then(
+            message => alert("Message sent succesfully")
+        );
+    }
+</script>
+<script src="js/menu.js"></script>
+
+</body>
+</html>
