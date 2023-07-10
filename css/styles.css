@@ -160,7 +160,7 @@ input{
  .logo-nav-bar{
 
     display:flex;
-
+    padding: 20px;
     z-index: 4;
     color: black;
     /* width: 100%;
