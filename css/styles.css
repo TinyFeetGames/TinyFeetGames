@@ -61,6 +61,7 @@ h2{
 h3{
     font-weight: 100;
     font-family: Merriweather;
+    font-size: 1.3vw;
 }
 h4{
     font-family: Merriweather;
@@ -72,6 +73,16 @@ a{
 p {
     font-family: Merriweather;
     font-size: 1vw;
+}
+
+i{
+    font-family: Merriweather;
+    font-size: 3vh;
+}
+
+u{
+    font-family: Merriweather;
+    font-size: 3vh;
 }
 
 small{
@@ -123,13 +134,17 @@ input{
 }
 
 .UprisingHumanumLogo{
-    width: 100%;
-    padding: auto;
+    max-height:100%; 
+    max-width:100%;
+    object-fit: contain;
 }
 .logoBox{
-    width: auto;
-    height: auto;
-    padding: auto;
+    max-height:75%; 
+    max-width:75%;
+    object-fit: contain;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 /*/////////////////////////////////////////////////////////////////*/
 /*///////////////////////////ICONS END/////////////////////////////*/
@@ -144,15 +159,14 @@ input{
 /*/////////////////////////////////////////////////////////////////*/
  .logo-nav-bar{
 
-    display: flex;
+    display:flex;
 
     z-index: 4;
-
     color: black;
-    width: 100%;
-    height: 100px;
+    /* width: 100%;
+    height: 100px; */
     position: relative;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
@@ -218,7 +232,7 @@ input{
 /*/////////////////////////////////////////////////////////////////*/
 /*///////////////////////HEADER RESPONSIVE/////////////////////////*/
 /*/////////////////////////////////////////////////////////////////*/
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     .nav-bar {
         display: flex;
     }
@@ -228,7 +242,7 @@ input{
     .nav-bar {
         display: none;
     }
-}
+} */
 
 
 @media (max-width: 1024px) {
@@ -264,7 +278,7 @@ input{
 
     header{
         display: flex;
-        justify-content: space-between;
+        justify-content:space-around;
     }
 
     .main-nav {
@@ -463,7 +477,7 @@ input{
 /*////////////////////////WEBSITE CONTENT//////////////////////////*/
 /*/////////////////////////////////////////////////////////////////*/
 .content{
-    height: 95vh;
+    height: 90vh;
     background-color: rgba(0,0,0,0);
 }
 
@@ -658,7 +672,7 @@ main.features-container{
     display: flex;
     justify-content: center;
     flex-flow: column;
-    
+    width: 100%;
     background-color: var(--backgroundColor);
 }
 .features-container img{
@@ -723,6 +737,7 @@ main.features-container{
 
 .box-includes-box-features{
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
     margin: auto;
 }
@@ -750,9 +765,9 @@ main.features-container{
     }
 }
 
-/*.container-features{
-    width: 200vw;
-}*/
+.container-features{
+    width: 100%;
+}
 
 .special-name{
     font-family: MerriweatherThin;
@@ -793,6 +808,9 @@ main.features-container{
 @media (max-width: 1024px) {
     h2{
         font-size: 4vw;
+    }
+    h3{
+        font-size: 2vw;
     }
 }
 
