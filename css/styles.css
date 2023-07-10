@@ -675,13 +675,13 @@ main.features-container{
     width: 100%;
     background-color: var(--backgroundColor);
 }
-.features-container img{
+/* .features-container img{
     margin: 15px auto;
     width: 50%;
     border-radius: 25px;
-    /*box-shadow:  11px 11px 40px var(--details),
-    -11px -11px 40px var(--details);*/
-}
+    box-shadow:  11px 11px 40px var(--details),
+    -11px -11px 40px var(--details);
+} */
 .features-container h3{
     /*width: 50%;
     border-radius: 25px;*/
