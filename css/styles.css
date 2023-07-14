@@ -11,7 +11,7 @@
     --complementary: #272624;
     --headerBackgroundColor: #000000;
     --backgroundColor: #000000;
-    --blackOpacityreduced: rgba(0, 0, 0, 0.9);
+    --blackOpacityreduced: rgba(0, 0, 0, 0.85);
     --featuresBackground: white;
 }
 
@@ -432,7 +432,7 @@ input{
     flex-flow: row;
 }
 
-/*@media (max-width: 1024px) {
+@media (max-width: 1024px) {
     #section-video{
         display: flex;
         justify-content: center;
@@ -451,7 +451,15 @@ input{
         height: auto;
         order: 1;
     }
-}*/
+
+    #section-video .container.explanation{
+        width: auto;
+        height: fit-content;
+        
+    }
+
+    
+}
 
 .player-background{
     margin: 0;
@@ -788,22 +796,25 @@ main.features-container{
 }
 
 .float-div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
     width: 32%;
-    height: 79%;
+    height: 80%;
     background-color: var(--blackOpacityreduced);
     margin: 0;
     padding: 5%;
 }
 
-@media (max-width: 572px) {
+@media (max-width: 750px) {
     .float-div{
         display:flex;
         flex-direction: column;
         justify-content: center;
         position: absolute;
-        width:38%;
-        height: 79%;
+        width:65%;
+        height: 80%;
         background-color: var(--blackOpacityreduced);
         margin: 0;
         padding: 5%;
@@ -819,12 +830,12 @@ main.features-container{
     }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 750px) {
     h3{
-        font-size: 4vw;
+        font-size: 120%;
     }
     h2{
-        font-size: 5vw;
+        font-size: 200%;
     }
 }
 
