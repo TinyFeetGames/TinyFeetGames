@@ -392,12 +392,6 @@ input{
     background-repeat: no-repeat;
 }
 
-.separator{
-    height: 5vh;
-    display: flex;
-    flex-direction: column;
-}
-
 .container{
     width: 100%;
 }
@@ -810,17 +804,37 @@ main.features-container{
     padding: 5%;
 }
 
+.separator{
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-for-image-div{
+    height: 70vh;
+}
+
 @media (max-width: 750px) {
     .float-div{
         display:flex;
         flex-direction: column;
         justify-content: center;
-        position: absolute;
+        position: relative;
         width:100%;
-        height: 8%;
+        height: fit-content;
         background-color: var(--blackOpacityreduced);
         margin: 0;
         padding: 5%;
+    }
+
+    .separator{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .edit-for-image-div{
+        height: 30vh;
     }
 }
 
@@ -842,12 +856,6 @@ main.features-container{
     }
 }
 
-
-
-
-.edit-for-image-div{
-    height: 70vh;
-}
 
 .flex-style{
     display: flex;
