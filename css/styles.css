@@ -915,3 +915,72 @@ form button{
     border-radius: 15px;
     border: none;
 }
+
+
+
+.game-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px 20px 0 20px;
+
+}
+
+.game-container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.game-container .heading h2{
+    font-size: 3em;
+    font-weight: bolder;
+    border-bottom: 3px solid white;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.game-container .heading h2 span{
+    font-weight: 1;
+    color: white;
+}
+
+.game-container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.game-container .box .game-images{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.game-container .box .game-images img{
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px; /*esto no claro*/
+}
+
+@media only screen and (max-width: 769px){
+    .game-container .box{
+        flex-direction: column;
+    }
+
+    .game-container .box .game-images{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 643px){
+    .game-container .heading{
+        width: 100%;
+    }
+    
+    .game-container .heading h2{
+        font-size: 2em;
+    }
+}
