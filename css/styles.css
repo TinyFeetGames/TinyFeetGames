@@ -1,10 +1,10 @@
 :root{
     color: #bab3b7;
     color: #686868;
-    --details: #ff0088;
+    --details: #f90035;
     --details2:#0a0324;
-    --colorHoverd1: #ff0088;
-    color: #BF3B5A;
+    --colorHoverd1: #f90035;
+    color: #a80e2f;
     color: #5E4169;
     color: #3c466b;
     color: black;
@@ -28,7 +28,8 @@
 @font-face {
     font-family: MerriweatherThin;
     font-weight: 1000;
-    src: url(../fonts/MerriweatherSans-Light.ttf);
+    /*src: url(../fonts/MerriweatherSans-Light.ttf);*/
+    src: url(../fonts/MerriweatherSans-ExtraBold.ttf);
 }
 
 img{
@@ -781,7 +782,7 @@ main.features-container{
 
 .special-name{
     font-family: MerriweatherThin;
-    color: #ff0088;
+    color: var(--details);
 }
 
 .to-right{
