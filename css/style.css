@@ -5,7 +5,7 @@
     font-family: "Poppins", sans-serif;
   }
   body {
-    background-image: url(../images/Feature1.gif);
+    background: #040506;
   }
   .row {
     display: flex;
@@ -59,7 +59,7 @@
     min-width: 180px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .card a {
     text-decoration: none;

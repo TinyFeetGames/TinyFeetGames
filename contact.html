@@ -6,6 +6,8 @@
     <meta name="viewport"  content="width=witdh-device, 
     user scalable=no,initial-scale=1.0, maximum-scale=1.0,minimum scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" type="svg" href="../images/icons/uprising-icon.png">
+    <title>Contact Us!</title>
     
 </head>
     
@@ -30,8 +32,11 @@
     <nav class="main-nav" id="menu">
         <!--Menu content-->
         <ul class="menu" >
-            <li class="item-menu hover"><a href="" class="link-menu">Contact</a></li>
-            <li class="item-menu hover"><a href="" class="link-menu">Download</a></li>
+            <li class="item-menu hover"><a href="index.html" target="" class="link-menu">Home</a></li>
+              <li class="item-menu hover"><a href="dev.html" class="link-menu">Dev</a></li>
+              <li class="item-menu hover"><a href="contact.html" class="link-menu">Contact</a></li>
+              <li class="item-menu hover"><a href="https://drive.google.com/drive/folders/1UtP75gL1Cgz0RjeTDiFFVpeY17hqQI4l?usp=drive_link" class="link-menu">Presskit</a></li>
+              <li class="item-menu hover"><a href="gallery.html" class="link-menu">Gallery</a></li>    
             <li class="item-menu hover"><a href="https://store.steampowered.com/app/2388250/Uprising_Humanum/" class="link-menu">Steam</a></li>
             <!--Menu content end-->
         </ul>
@@ -42,14 +47,16 @@
 <div class="section content">
     <div class="slide">
         <div class="contact-container">
-            <form onsubmit="sendEmail(); reset(); return false;">
+
+            <form action="https://formspree.io/f/xqkvbwbw" method="POST">
                 <h1>CONTACT</h1>
                 <input type="text" id="name" placeholder="Your Name" required>
                 <input type="email" id="email" placeholder="Email id" required>
-                <input type="text" id="phone" placeholder="Phone no." required>
+                <input type="text" id="phone" placeholder="Phone no.">
                 <textarea id="message" rows="4" placeholder="What do you whant to know?"></textarea>
                 <button type="submit">SEND</button>
             </form>
+
         </div>
     </div> 
 </div>
@@ -80,7 +87,7 @@
 </footer>
 <!--Footer end-->
 
-<script src="https://smtpjs.com/v3/smtp.js"></script>
+<!--script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
     function sendEmail(){
         Email.send({
@@ -102,7 +109,7 @@
             message => alert("Message sent succesfully")
         );
     }
-</script>
+</script-->
 <script src="js/menu.js"></script>
 
 </body>

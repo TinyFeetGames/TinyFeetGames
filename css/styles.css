@@ -503,8 +503,6 @@ input{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /*justify-content: ;
-    align-items: ;*/
 }
 .slide div{
     margin: 3%;
